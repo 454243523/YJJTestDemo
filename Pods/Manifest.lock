@@ -1,0 +1,16 @@
+PODS:
+  - YJJPrivate (0.0.3)
+
+DEPENDENCIES:
+  - YJJPrivate
+
+SPEC REPOS:
+  "git@192.168.0.11:yjj/Specs.git":
+    - YJJPrivate
+
+SPEC CHECKSUMS:
+  YJJPrivate: 7fe024bcb1f95f270ab7938bf9a0b1a7a5fb7c12
+
+PODFILE CHECKSUM: 9c4099a6d3005db37e0b1d4709267435f82e5480
+
+COCOAPODS: 1.6.0.beta.2
