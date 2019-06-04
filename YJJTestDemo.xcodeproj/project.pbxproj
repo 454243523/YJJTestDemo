@@ -15,6 +15,9 @@
 		34B9FEE2221D3843003D66DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B9FEE1221D3843003D66DE /* main.m */; };
 		34B9FEEC221D3843003D66DE /* YJJTestDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B9FEEB221D3843003D66DE /* YJJTestDemoTests.m */; };
 		34B9FEF7221D3843003D66DE /* YJJTestDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B9FEF6221D3843003D66DE /* YJJTestDemoUITests.m */; };
+		34BA42F622A6476000CD6F05 /* YJJMJFootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BA42F522A6476000CD6F05 /* YJJMJFootViewController.m */; };
+		34BA42FC22A64DED00CD6F05 /* NSString+FFAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BA42FA22A64DED00CD6F05 /* NSString+FFAdd.m */; };
+		34BA42FD22A64DED00CD6F05 /* XXTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BA42FB22A64DED00CD6F05 /* XXTextView.m */; };
 		5A049375D0B759D9D8996437 /* libPods-YJJTestDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78FE855C0B5567AFC2147863 /* libPods-YJJTestDemoTests.a */; };
 		826717B451259FB051A82948 /* libPods-YJJTestDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EEAEB90F98614A5E5019233 /* libPods-YJJTestDemo.a */; };
 		AA6F052F5E96214DC6BB2722 /* libPods-YJJTestDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58D13982DC553C736B5B508C /* libPods-YJJTestDemoUITests.a */; };
@@ -57,6 +60,14 @@
 		34B9FEF2221D3843003D66DE /* YJJTestDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YJJTestDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34B9FEF6221D3843003D66DE /* YJJTestDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJJTestDemoUITests.m; sourceTree = "<group>"; };
 		34B9FEF8221D3843003D66DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34BA42F422A6476000CD6F05 /* YJJMJFootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJJMJFootViewController.h; sourceTree = "<group>"; };
+		34BA42F522A6476000CD6F05 /* YJJMJFootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJJMJFootViewController.m; sourceTree = "<group>"; };
+		34BA42F822A64DED00CD6F05 /* NSString+FFAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FFAdd.h"; sourceTree = "<group>"; };
+		34BA42F922A64DED00CD6F05 /* XXTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXTextView.h; sourceTree = "<group>"; };
+		34BA42FA22A64DED00CD6F05 /* NSString+FFAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FFAdd.m"; sourceTree = "<group>"; };
+		34BA42FB22A64DED00CD6F05 /* XXTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXTextView.m; sourceTree = "<group>"; };
+		34BA42FF22A6543C00CD6F05 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		34BA430022A65AA200CD6F05 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		45D707AAF5BD3163E5F879B6 /* Pods-YJJTestDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJJTestDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-YJJTestDemoTests/Pods-YJJTestDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		58D13982DC553C736B5B508C /* libPods-YJJTestDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YJJTestDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EEAEB90F98614A5E5019233 /* libPods-YJJTestDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YJJTestDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,10 +129,12 @@
 		34B9FED1221D3843003D66DE /* YJJTestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				34BA42F722A64DED00CD6F05 /* YJJTool */,
+				34BA42F322A6472200CD6F05 /* item1 */,
 				34B9FED2221D3843003D66DE /* AppDelegate.h */,
 				34B9FED3221D3843003D66DE /* AppDelegate.m */,
-				34B9FED5221D3843003D66DE /* ViewController.h */,
-				34B9FED6221D3843003D66DE /* ViewController.m */,
+				34BA42FF22A6543C00CD6F05 /* PrefixHeader.pch */,
+				34BA430022A65AA200CD6F05 /* Constants.h */,
 				34B9FED8221D3843003D66DE /* Main.storyboard */,
 				34B9FEDB221D3843003D66DE /* Assets.xcassets */,
 				34B9FEDD221D3843003D66DE /* LaunchScreen.storyboard */,
@@ -149,6 +162,28 @@
 			path = YJJTestDemoUITests;
 			sourceTree = "<group>";
 		};
+		34BA42F322A6472200CD6F05 /* item1 */ = {
+			isa = PBXGroup;
+			children = (
+				34B9FED5221D3843003D66DE /* ViewController.h */,
+				34B9FED6221D3843003D66DE /* ViewController.m */,
+				34BA42F422A6476000CD6F05 /* YJJMJFootViewController.h */,
+				34BA42F522A6476000CD6F05 /* YJJMJFootViewController.m */,
+			);
+			path = item1;
+			sourceTree = "<group>";
+		};
+		34BA42F722A64DED00CD6F05 /* YJJTool */ = {
+			isa = PBXGroup;
+			children = (
+				34BA42F822A64DED00CD6F05 /* NSString+FFAdd.h */,
+				34BA42FA22A64DED00CD6F05 /* NSString+FFAdd.m */,
+				34BA42F922A64DED00CD6F05 /* XXTextView.h */,
+				34BA42FB22A64DED00CD6F05 /* XXTextView.m */,
+			);
+			path = YJJTool;
+			sourceTree = "<group>";
+		};
 		9635B3AF6D241E91CE88B611 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,7 +194,6 @@
 				2F22DBD8EF72F5758461A099 /* Pods-YJJTestDemoUITests.debug.xcconfig */,
 				76932011AFE8C19A25DBE148 /* Pods-YJJTestDemoUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -184,6 +218,7 @@
 				34B9FECB221D3843003D66DE /* Sources */,
 				34B9FECC221D3843003D66DE /* Frameworks */,
 				34B9FECD221D3843003D66DE /* Resources */,
+				55F04C863BD052DC134A0279 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -324,6 +359,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		55F04C863BD052DC134A0279 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YJJTestDemo/Pods-YJJTestDemo-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YJJTestDemo/Pods-YJJTestDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6CFDD9A48A34A377E90B77E4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -378,6 +435,9 @@
 				34B9FED7221D3843003D66DE /* ViewController.m in Sources */,
 				34B9FEE2221D3843003D66DE /* main.m in Sources */,
 				34B9FED4221D3843003D66DE /* AppDelegate.m in Sources */,
+				34BA42FD22A64DED00CD6F05 /* XXTextView.m in Sources */,
+				34BA42F622A6476000CD6F05 /* YJJMJFootViewController.m in Sources */,
+				34BA42FC22A64DED00CD6F05 /* NSString+FFAdd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,6 +611,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X9P9SX5GW5;
+				GCC_PREFIX_HEADER = "/Users/qiapeng-ios/Desktop/YJJTestDemo/YJJTestDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = YJJTestDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -569,6 +630,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X9P9SX5GW5;
+				GCC_PREFIX_HEADER = "/Users/qiapeng-ios/Desktop/YJJTestDemo/YJJTestDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = YJJTestDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

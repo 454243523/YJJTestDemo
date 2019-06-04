@@ -1,16 +1,60 @@
 PODS:
-  - YJJPrivate (0.0.3)
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - Masonry (1.1.0)
+  - MJExtension (3.0.15.1)
+  - MJRefresh (3.1.15.7)
 
 DEPENDENCIES:
-  - YJJPrivate
+  - AFNetworking
+  - BlocksKit
+  - Masonry
+  - MJExtension
+  - MJRefresh
 
 SPEC REPOS:
-  "git@192.168.0.11:yjj/Specs.git":
-    - YJJPrivate
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - BlocksKit
+    - Masonry
+    - MJExtension
+    - MJRefresh
 
 SPEC CHECKSUMS:
-  YJJPrivate: 7fe024bcb1f95f270ab7938bf9a0b1a7a5fb7c12
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
 
-PODFILE CHECKSUM: 9c4099a6d3005db37e0b1d4709267435f82e5480
+PODFILE CHECKSUM: e2ed1ff60b1a9f7acb3e771bde5d030ad57a0cfa
 
 COCOAPODS: 1.6.0.beta.2
