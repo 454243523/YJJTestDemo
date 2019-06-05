@@ -27,17 +27,20 @@
     }];
     self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
         weakSelf.page++;
-        if (weakSelf.page++ < 5) {
+        if (weakSelf.page++ < 3) {
             [weakSelf.tableView.mj_footer endRefreshing];
         }else{
             [weakSelf.tableView.mj_footer endRefreshingWithNoMoreData];
         }
         [weakSelf.tableView reloadData];
     }];
+    MJRefreshBackNormalFooter *foot = (MJRefreshBackNormalFooter *)self.tableView.mj_footer;
+    foot.stateLabel.font = [UIFont systemFontOfSize:12];
+    [(MJRefreshBackNormalFooter *)self.tableView.mj_footer setTitle:@"数据在摘完了" forState:MJRefreshStateNoMoreData];
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return self.page*10+3;
+    return self.page*5+3;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
