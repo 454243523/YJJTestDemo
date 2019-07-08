@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		346A13B222D32E510046F721 /* YJJLoadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 346A13B122D32E510046F721 /* YJJLoadView.m */; };
+		346A13BB22D342AE0046F721 /* Item3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346A13BA22D342AE0046F721 /* Item3ViewController.m */; };
 		34B9FED4221D3843003D66DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B9FED3221D3843003D66DE /* AppDelegate.m */; };
 		34B9FED7221D3843003D66DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B9FED6221D3843003D66DE /* ViewController.m */; };
 		34B9FEDA221D3843003D66DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34B9FED8221D3843003D66DE /* Main.storyboard */; };
@@ -44,6 +46,10 @@
 		23F826EFCCD80C9FB394F39B /* Pods-YJJTestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJJTestDemo.debug.xcconfig"; path = "Target Support Files/Pods-YJJTestDemo/Pods-YJJTestDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		252F3D4DD75478B229D4310A /* Pods-YJJTestDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJJTestDemoTests.release.xcconfig"; path = "Target Support Files/Pods-YJJTestDemoTests/Pods-YJJTestDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		2F22DBD8EF72F5758461A099 /* Pods-YJJTestDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJJTestDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-YJJTestDemoUITests/Pods-YJJTestDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		346A13B022D32E510046F721 /* YJJLoadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJJLoadView.h; sourceTree = "<group>"; };
+		346A13B122D32E510046F721 /* YJJLoadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJJLoadView.m; sourceTree = "<group>"; };
+		346A13B922D342AE0046F721 /* Item3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item3ViewController.h; sourceTree = "<group>"; };
+		346A13BA22D342AE0046F721 /* Item3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item3ViewController.m; sourceTree = "<group>"; };
 		34B9FECF221D3843003D66DE /* YJJTestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJJTestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34B9FED2221D3843003D66DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		34B9FED3221D3843003D66DE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -104,6 +110,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		346A13AF22D32E280046F721 /* 转圈View */ = {
+			isa = PBXGroup;
+			children = (
+				346A13B022D32E510046F721 /* YJJLoadView.h */,
+				346A13B122D32E510046F721 /* YJJLoadView.m */,
+				346A13B922D342AE0046F721 /* Item3ViewController.h */,
+				346A13BA22D342AE0046F721 /* Item3ViewController.m */,
+			);
+			path = "转圈View";
+			sourceTree = "<group>";
+		};
 		34B9FEC6221D3843003D66DE = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +146,7 @@
 		34B9FED1221D3843003D66DE /* YJJTestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				346A13AF22D32E280046F721 /* 转圈View */,
 				34BA42F722A64DED00CD6F05 /* YJJTool */,
 				34BA42F322A6472200CD6F05 /* item1 */,
 				34B9FED2221D3843003D66DE /* AppDelegate.h */,
@@ -433,11 +451,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				34B9FED7221D3843003D66DE /* ViewController.m in Sources */,
+				346A13BB22D342AE0046F721 /* Item3ViewController.m in Sources */,
 				34B9FEE2221D3843003D66DE /* main.m in Sources */,
 				34B9FED4221D3843003D66DE /* AppDelegate.m in Sources */,
 				34BA42FD22A64DED00CD6F05 /* XXTextView.m in Sources */,
 				34BA42F622A6476000CD6F05 /* YJJMJFootViewController.m in Sources */,
 				34BA42FC22A64DED00CD6F05 /* NSString+FFAdd.m in Sources */,
+				346A13B222D32E510046F721 /* YJJLoadView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
