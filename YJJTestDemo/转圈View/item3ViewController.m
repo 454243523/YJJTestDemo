@@ -25,7 +25,7 @@
 }
 
 - (IBAction)startAtion:(id)sender {
-    self.loadview.type = arc4random()%3;
+    self.loadview.type = 3;
 }
 
 - (IBAction)stopAtion:(id)sender {

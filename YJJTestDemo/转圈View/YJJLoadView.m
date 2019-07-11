@@ -43,23 +43,26 @@
     [self.imageBtn.layer removeAllAnimations];
 }
 -(void)setType:(NSInteger)type{
-    _type = type;
-    if (_type > 2) {
-        _type = 0;
+    
+    if (type > 3) {
+        type = 0;
     }
-    if (_type == 0) {//暂停播放
+    if (type == 0||type == 1) {//暂停播放
         [self.imageBtn setImage:[UIImage imageNamed:@"play_play"] forState:0];
         [self stop];
         self.imageBtn.enabled = YES;
-    }else if (_type == 1){
+    }else if (type == 2){
         [self.imageBtn setImage:[UIImage imageNamed:@"play_pause"] forState:0];
         [self stop];
         self.imageBtn.enabled = YES;
     }else{//加载中
-        [self.imageBtn setImage:[UIImage imageNamed:@"play_load"] forState:0];
-        self.imageBtn.enabled = NO;
-        [self start];
+        if (_type != type) {//防止多个动画导致停止
+            [self.imageBtn setImage:[UIImage imageNamed:@"play_load"] forState:0];
+            [self start];
+            self.imageBtn.enabled = NO;
+        }
     }
+    _type = type;
     [self.imageBtn layoutIfNeeded];
 }
 -(void)selectBtnAtion:(UIButton *)btn{
