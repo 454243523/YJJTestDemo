@@ -177,7 +177,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Pw8-OT-0G6"/>
                                 </constraints>
-                                <state key="normal" title="开始"/>
+                                <state key="normal" title="换状态"/>
                                 <connections>
                                     <action selector="startAtion:" destination="yW0-wV-ufd" eventType="touchUpInside" id="S8K-87-qfc"/>
                                 </connections>

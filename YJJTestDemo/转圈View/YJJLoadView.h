@@ -11,10 +11,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface YJJLoadView : UIView
-@property (nonatomic, strong) UIImageView *imageview;
+@property (nonatomic, strong) UIButton *imageBtn;
 @property (nonatomic, strong) NSString *image;//图片名称
-
-
+@property (nonatomic, assign) NSInteger type;
+@property (nonatomic, strong) void (^selectBlock)(NSInteger type);
 -(void)start;
 
 @end

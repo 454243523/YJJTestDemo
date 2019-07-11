@@ -17,12 +17,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    [self.loadview start];
+    self.loadview.type = 0;
+    self.loadview.selectBlock = ^(NSInteger type) {
+        self.loadview.type++;
+    };
+    
 }
 
 - (IBAction)startAtion:(id)sender {
-    self.loadview.hidden = !self.loadview.hidden;
+    self.loadview.type = arc4random()%3;
 }
 
 - (IBAction)stopAtion:(id)sender {

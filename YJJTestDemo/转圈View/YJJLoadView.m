@@ -29,23 +29,56 @@
     return self;
 }
 -(void)start{
-    if (!_imageview) {
-        self.imageview = [[UIImageView alloc]init];
-        [self.imageview setImage:[UIImage imageNamed:@"play_load"]];
-//        self.imageview.backgroundColor = [UIColor redColor];
-        [self addSubview:self.imageview];
-        [self.imageview mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.imageBtn.layer removeAllAnimations];
+    
+    CABasicAnimation *layer = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
+    layer.toValue = @(2*M_PI);
+    layer.duration = 3;
+    layer.removedOnCompletion = false;
+    layer.repeatCount = MAXFLOAT;
+    [self.imageBtn.layer addAnimation:layer forKey:nil];
+
+}
+-(void)stop{
+    [self.imageBtn.layer removeAllAnimations];
+}
+-(void)setType:(NSInteger)type{
+    _type = type;
+    if (_type > 2) {
+        _type = 0;
+    }
+    if (_type == 0) {//暂停播放
+        [self.imageBtn setImage:[UIImage imageNamed:@"play_play"] forState:0];
+        [self stop];
+        self.imageBtn.enabled = YES;
+    }else if (_type == 1){
+        [self.imageBtn setImage:[UIImage imageNamed:@"play_pause"] forState:0];
+        [self stop];
+        self.imageBtn.enabled = YES;
+    }else{//加载中
+        [self.imageBtn setImage:[UIImage imageNamed:@"play_load"] forState:0];
+        self.imageBtn.enabled = NO;
+        [self start];
+    }
+    [self.imageBtn layoutIfNeeded];
+}
+-(void)selectBtnAtion:(UIButton *)btn{
+    if (self.selectBlock) {
+        self.selectBlock(self.type);
+    }
+}
+-(UIButton *)imageBtn{
+    if (!_imageBtn) {
+        _imageBtn = [[UIButton alloc]init];
+        [_imageBtn setImage:[UIImage imageNamed:@"play_play"] forState:0];
+        [self addSubview:_imageBtn];
+        [_imageBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.width.height.mas_offset(50);
             make.center.mas_offset(0);
         }];
-        CABasicAnimation *layer = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
-        layer.toValue = @(2*M_PI);
-        layer.duration = 3;
-        layer.removedOnCompletion = false;
-        layer.repeatCount = MAXFLOAT;
-        [self.imageview.layer addAnimation:layer forKey:nil];
+        [_imageBtn addTarget:self action:@selector(selectBtnAtion:) forControlEvents:UIControlEventTouchUpInside];
+        _imageBtn.enabled = NO;
     }
-//    [self start];
+    return _imageBtn;
 }
-
 @end
